@@ -1,0 +1,17 @@
+.editing-word {
+  padding: 1rem;
+  input {
+    height: 2rem;
+    width: 20rem;
+    padding-left: 0.2rem;
+    font-size: 1.5rem;
+    display: block;
+    margin: 0.8rem;
+    outline: none;
+  }
+  input:nth-child(5) {
+    background-color: #00ff00;
+    color: darkblue;
+    outline: none;
+  }
+}

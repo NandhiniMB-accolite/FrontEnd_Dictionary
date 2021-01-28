@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "dict"
+    }
+  },
+  "defaultProject": "dict",
+  "cli": {
+    "analytics": "ff7ba351-8fda-4e27-bd1a-5a20a25f8efd"
+  }
 }

@@ -1,0 +1,9 @@
+<section class="editing-word">
+  <form [formGroup]="wordForm">
+    <input formControlName="word" placeholder="Word" />
+    <input formControlName="partOfSpeech" placeholder="Part Of Speech" />
+    <input formControlName="meaning" placeholder="Meaning" />
+    <input formControlName="example" placeholder="Example Of Sentence" />
+    <input type="button" [value]="buttonLabel" [disabled]="!wordForm.valid" (click)="addOrUpdateWord()" />
+  </form>
+</section>
