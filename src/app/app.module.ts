@@ -9,7 +9,7 @@ import { AddComponent } from './add/add.component';
 import { UpdateComponent } from './update/update.component';
 
 import { WordService } from "./word.service";
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +21,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [WordService],
   bootstrap: [AppComponent]

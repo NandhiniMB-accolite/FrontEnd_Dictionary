@@ -2,6 +2,14 @@
   <div class="home-page-container">
     <div class="list-of-word">
       <span class="word-heading">Words</span>
+      <br>
+      <input class="search" type="search" [value]="searchValue" (change)="searchWord($event)" >
+      
+      <select ng-model="selectOption" class='form-control' (change)="sortWord($event)" >
+        <option value='name'>By Name</option>
+       <option value='time'>By Time</option>
+   </select>
+      <button (click)="clearSearch()">Clear</button>
       <ng-template ngFor let-item [ngForOf]="words">
         <div class="word" >
           <div class="meaning">
